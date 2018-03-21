@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wikipedia Viewer - a freeCodeCamp's Intermediate Front-end Project</title>
+    <!-- Load Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <!-- Load fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!-- Load normalize.css -->
     <link rel="stylesheet" href="assets/css/lib/normalize.css">
     <!-- Load custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-<body>
 
+<body>
+    <header id="header">
+        <h1>Wikipedia Viewer</h1>
+    </header>
+    <nav class="nav" id="nav">
+        <h3>Click icon to search</h3>
+        <div class="nav__search">
+            <span id="search-button">
+                <i class="fas fa-search"></i>
+            </span>
+            <div class="search__area">
+                <input type="text" class="search__input" id="search-input">
+                <span id="search-clear">
+                    <i class="far fa-times-circle"></i>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div class="random-article">
+        <p>or</p>
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" id="random-article">Click here for a random article</a>
+    </div>
+    <section id="main"></section>
+    <footer id="footer">Developed by Giang Vu</footer>
+
+    <!-- Load jQuery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <!-- Load custom JS -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

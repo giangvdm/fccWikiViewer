@@ -1,6 +1,158 @@
-/* Reset CSS */
-body, html {
-    padding: 0;
-    margin: 0;
+/* Global styling */
+html, body {
+    height: 100%;
+}
+
+html * {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: #75B1A9;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* */
+
+
+/* Header */
+#header {
+    text-align: center;
+}
+#header > h1 {
+    font-size: 3em;
+    color: #F1F3CE;
+}
+/* */
+
+
+/* Navigation */
+.nav {
+    text-align: center;
+    margin: 3em 0 0;
+    color: #F1F3CE;
+}
+
+.nav > h3 {
+    font-size: 2em;
+}
+
+.nav__search {
+    height: 40px;
+}
+
+.search__area {
+    display: none;
+}
+
+.search__input {
+    background-color: #75B1A9;
+    transition: border-color 0.25s;
+}
+
+.search__input:focus {
+    border-color: #D9B44A;
+}
+
+#search-button, #search-clear {
+    font-size: 2em;
+    margin-right: 5px;
+    transition: color 0.25s;
+}
+
+#search-button:hover, #search-clear:hover {
+    cursor: pointer;
+    color: #D9B44A;
+}
+
+#search-clear {
+    margin-left: 3px;
+}
+
+/* Reset text input styling */
+.search__input {
+    border: none;
+    outline: none;
+}
+/* Style text input */
+.search__input {
+    padding: 0.25em 0.25em 0.25em 0.5em;
+    font-size: 1.5em;
+    border: 3px solid #F1F3CE;
+    border-radius: 25px;
+    color: #F1F3CE;
+    width: 70%;
+}
+
+.show {
+    display: inline-block;
+}
+/* */
+
+
+/* Random article */
+.random-article {
+    text-align: center;
+    color: #F1F2CE;
+    margin-bottom: 3em;
+}
+
+#random-article {
+    color: #F1F3CE;
+    font-weight: bold;
+    transition: color 0.25s;
+}
+#random-article:hover {
+    color: #D9B44A;
+}
+/* */
+
+
+/* Main section */
+#main {
+    min-height: 60%;
+    margin: 0 auto -50px;
+    width: 70%;
+}
+
+/* Article */
+.article {
+    border: 1px solid;
+    border-left: 8px solid;
+    border-color: #4F6457;
+    border-radius: 0 8px 8px 0;
+    margin: 1em 0;
+    padding: 0 2em 1em;
+    background-color: #ACD0C0;
+    transition: border-color 0.25s;
+}
+
+.article:hover {
+    cursor: pointer;
+    border-color: #D9B44A;
+}
+/* */
+
+
+/* Footer */
+#push, #footer {
+    height: 50px;
+}
+
+#footer {
+    color: #F1F3CE;
+    line-height: 50px; /* same as footer's height */
+    vertical-align: middle;
+    text-align: center;
+    background-color: #4F6457;
+    bottom: 0;
 }
 /* */
